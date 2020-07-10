@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token, } = require('./config.json');
+const { prefix, } = require('./config.json');
 const client = new Discord.Client();
 const { accounts1, accounts2, accounts3, accounts4, accounts5, } = require('./accounts.json');
 const fs = require('fs');
@@ -177,4 +177,4 @@ if(message.channel.name == "general") {
 }
 
 })
-client.login(token);
+client.login(process.env.TOKEN);
