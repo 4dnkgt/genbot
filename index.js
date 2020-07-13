@@ -171,5 +171,6 @@ if(message.content.startsWith(`${prefix}stock`)) {
     })
     message.delete({ timeout: 2000 })
 }
+})
 
 client.login(process.env.TOKEN);
