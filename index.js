@@ -129,5 +129,6 @@ client.on("message", message => {
     })
     message.delete({ timeout: 10000})
     }
+})
     
 client.login(process.env.TOKEN);
