@@ -14,6 +14,7 @@ client.once('ready', () => {
 })
 
 client.on("message", message => {
+    client.user.setPresence({ game: { name: `${client.guilds.size} Servers`, type: "WATCHING"}});
     console.log(message.content);
 })
 
@@ -91,9 +92,6 @@ client.on("message", message => {
     }
 
 
-
-    // STOCK AND STATUS
-    client.user.setActivity("+Help | Generating your accounts!");
 
     if(message.content.startsWith(`${prefix}Stock`)) {
         let embedstock = new Discord.MessageEmbed()
