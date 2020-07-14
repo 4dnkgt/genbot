@@ -129,48 +129,5 @@ client.on("message", message => {
     })
     message.delete({ timeout: 10000})
     }
-if(message.content.startsWith(`${prefix}roblox`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Roblox\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}tunnelbear`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+TunnelBear\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}crunchyroll`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Crunchyroll\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}nordvpn`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Nordvpn\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}mail`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Mail\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}help`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Help\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-if(message.content.startsWith(`${prefix}stock`)) {
-    message.channel.send("Make sure to capitalize the first letter. It should be \'+Stock\'").then(message => {
-        message.delete({ timeout: 2000 })
-    })
-    message.delete({ timeout: 2000 })
-}
-})
-
+    
 client.login(process.env.TOKEN);
