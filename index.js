@@ -98,7 +98,7 @@ client.on("message", message => {
         .setAuthor('Proto Generator | Free')
         .setTitle('Stock of the Accounts!')
         .addFields(
-            { name: 'Roblox:', value: (stock1), inline: true},
+            { name: 'Roblox:', value: '80', inline: true},
             { name: 'Tunnel Bear:', value: (stock2), inline: true},
             { name: 'Crunchyroll:', value: (stock3), inline: true},
             { name: 'Nordvpn:', value: (stock4), inline: true},
